@@ -1,0 +1,18 @@
+server:
+  port: 8761
+eureka:
+  client:
+    #是否要将自己作为微服务注册
+    register-with-eureka: false
+    fetch-registry: false
+    #注册中心的访问地址
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huangbo12138/orderfoodsystem.git
+          username: huangbo12138
+          password: 164D1huangbo
